@@ -3,7 +3,7 @@ import { navigation } from "@/config/navigationConfig";
 export default function Navigation({ currSection, setCurrSection }) {
     return (
         <nav>
-            <ul className="grid grid-cols-4 text-center font-bold">
+            <ul className="grid grid-flow-col grid-cols-auto text-center font-bold">
                 {Object.keys(navigation).map((key) => (
                     <li key={key}
                         className="hover:bg-[#212529] py-2"

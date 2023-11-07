@@ -8,7 +8,7 @@ export default function Home() {
   const [currSection, setCurrSection] = useState(Object.keys(navigation)[0]);
 
   return (
-    <main className="px-4 mt-3">
+    <main className="px-4 md:px-20 mt-3">
       <Navigation 
         currSection={currSection} 
         setCurrSection={setCurrSection} 
