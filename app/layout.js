@@ -5,6 +5,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 import { config } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'
+import ProfileHeader from '@/components/ProfileHeader/ProfileHeader'
 config.autoAddCss = false
 
 export const metadata = {
@@ -17,6 +18,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <div className="mx-auto max-w-[724px] h-screen">
+          <ProfileHeader />
           {children}
         </div>
       </body>
