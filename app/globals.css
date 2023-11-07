@@ -28,4 +28,9 @@ body {
 
 body {
   background-color: #17191d;
+  color: white;
+}
+
+.light-gray-text {
+  color:#71767b;
 }
