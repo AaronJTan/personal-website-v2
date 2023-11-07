@@ -28,9 +28,23 @@ body {
 
 body {
   background-color: #17191d;
-  color: white;
+  color: #f8f9fa;
 }
 
 .light-gray-text {
   color:#71767b;
+}
+
+a {
+  text-decoration: underline;
+  @apply text-blue-200
+}
+
+.icon-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.icon-link:hover {
+  @apply text-blue-200
 }
