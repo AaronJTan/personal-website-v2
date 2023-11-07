@@ -1,9 +1,18 @@
-import ProfileHeader from "@/components/ProfileHeader/ProfileHeader";
+"use client"
+
+import Navigation from "@/components/Navigation/Navigation";
+import { useState } from "react";
+import { navigation } from "@/config/navigationConfig";
 
 export default function Home() {
+  const [currSection, setCurrSection] = useState(Object.keys(navigation)[0]);
+
   return (
-    <>
-      <ProfileHeader />
-    </>
+    <main className="px-4 mt-3">
+      <Navigation 
+        currSection={currSection} 
+        setCurrSection={setCurrSection} 
+      />
+    </main>
   );
 }
