@@ -2,7 +2,7 @@
 export default function Projects() {
     return (
         <section>
-            Projects
+            Projects Page In Progress...
         </section>
     );
 }
