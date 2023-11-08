@@ -2,7 +2,7 @@ import { socialMediaConfig } from "@/config/socialMediaConfig";
 
 export default function AboutMe() {
     return (
-        <section className="mt-5">
+        <section>
             <h2 className="text-2xl font-bold">&gt; Hello world!</h2>
 
             <p>

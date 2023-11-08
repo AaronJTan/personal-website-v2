@@ -2,7 +2,7 @@ import { navigation } from "@/config/navigationConfig";
 
 export default function Navigation({ selectedSection, setSelectedSection }) {
     return (
-        <nav>
+        <nav className="mb-5">
             <ul className="grid grid-flow-col grid-cols-auto text-center font-bold">
                 {navigation.map((navItem) => (
                     <li key={navItem.name}
