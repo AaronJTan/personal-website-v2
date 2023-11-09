@@ -1,4 +1,5 @@
 import TechStack from "@/components/TechStack/TechStack";
+import { userConfig } from "@/config/userConfig";
 import { workExperienceConfig } from "@/config/workExperienceConfig";
 
 export default function Work() {
@@ -8,13 +9,13 @@ export default function Work() {
             {workExperienceConfig.map((data, key) => (
                 <article key={key} className="grid grid-flow-col auto-cols-auto gap-2">
                     <div className="w-[40px] h-[40px] overflow-hidden rounded-full bg-blue-200">
-                        <img className="w-full h-full" src="/profile_pic.jpg" />
+                        <img className="w-full h-full" src={userConfig.profilePic} />
                     </div>
 
                     <div>
                         <div className="items-center flex gap-x-1 font-light text-xs light-gray-text">
-                            <span className="font-bold">Aaron Tan</span>
-                            <span>@aaronjtan</span>
+                            <span className="font-bold">{userConfig.name}</span>
+                            <span>{userConfig.username}</span>
                         </div>
 
                         <div>
