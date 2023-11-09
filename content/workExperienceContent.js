@@ -1,4 +1,4 @@
-export const workExperienceConfig = [
+export const workExperience = [
     {
         company: "University of Toronto Scarborough",
         logo: "work/utsc-logo.png",

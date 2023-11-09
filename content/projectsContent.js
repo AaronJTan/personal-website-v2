@@ -1,4 +1,4 @@
-export const projectsConfig = [
+export const projects = [
     {
         name: "Daily Updates",
         description: ["A web application that provides a convenient and centralized platform to access articles from various news websites and the latest deals."],

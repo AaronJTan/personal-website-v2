@@ -1,13 +1,13 @@
 import TechStack from "@/components/TechStack/TechStack";
 import { socialMediaIcons } from "@/config/iconsConfig";
-import { projectsConfig } from "@/config/projectsConfig";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
+import { projects } from "@/content/projectsContent";
 
 export default function Projects() {
     return (
         <section className="flex flex-col gap-8">
-            {projectsConfig.map((data, key) => (
+            {projects.map((data, key) => (
                 <article key={key} className="grid grid-flow-col auto-cols-auto gap-2">
                     <div>
                         <h2 className="text-xl font-bold">{data.name}</h2>

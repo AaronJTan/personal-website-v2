@@ -1,12 +1,12 @@
 import TechStack from "@/components/TechStack/TechStack";
 import { userConfig } from "@/config/userConfig";
-import { workExperienceConfig } from "@/config/workExperienceConfig";
+import { workExperience } from "@/content/workExperienceContent";
 
 export default function Work() {
     return (
         <section className="flex flex-col gap-8">
 
-            {workExperienceConfig.map((data, key) => (
+            {workExperience.map((data, key) => (
                 <article key={key} className="grid grid-flow-col auto-cols-auto gap-2">
                     <div className="w-[40px] h-[40px] overflow-hidden rounded-full bg-blue-200">
                         <img className="w-full h-full" src={userConfig.profilePic} />
