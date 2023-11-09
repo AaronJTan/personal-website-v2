@@ -1,13 +1,12 @@
-import { Inter } from 'next/font/google'
+import { inter } from '@/config/fontsConfig'
 import './globals.css'
 import { config } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'
+config.autoAddCss = false
+
 import ProfileHeader from '@/components/ProfileHeader/ProfileHeader'
 import NavBar from '@/components/NavBar/NavBar'
 import Footer from '@/components/Footer/Footer'
-config.autoAddCss = false
-
-const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Aaron Tan',

@@ -1,8 +1,8 @@
-import { Lobster } from "next/font/google";
+import { Lobster, Inter } from "next/font/google";
 
-const lobster = Lobster({
+export const inter = Inter({ subsets: ['latin'] })
+
+export const lobster = Lobster({
     weight: "400",
     subsets: ["latin"],
 });
-
-export { lobster };
